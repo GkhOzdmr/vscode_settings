@@ -1,0 +1,77 @@
+{
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "vim.searchHighlightColor": "edit.findMatchHighlightBackground",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "<leader>", "s"],
+            "after": [ "extension.aceJump.multiChar" ]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": [ "fileutils.renameFile" ]
+        },
+        {
+            "before": ["<leader>", "q"],
+            "commands": [ "workbench.action.previousEditor" ]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": [ "workbench.action.nextEditor" ]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": [ "editor.action.format" ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": false,
+    "editor.suggestSelection": "first",
+    "editor.multiCursorModifier": "alt",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "java.imports.gradle.wrapper.checksums": [
+        {
+            "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14",
+            "allowed": true
+        }
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "todo-tree.tree.showScanModeButton": false,
+    "python.languageServer": "Microsoft",
+    "workbench.preferredDarkColorTheme": "Dracula",
+    "workbench.preferredLightColorTheme": "Atom One Light",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
